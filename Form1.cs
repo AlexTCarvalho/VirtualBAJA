@@ -100,6 +100,7 @@ namespace VirtualBAJA
         }
 
         private void btConectar_Click(object sender, EventArgs e)
+            // O que acontece ao clicar no botão "Conectar"
         {
             if (serialPort1.IsOpen == false)
             {
@@ -148,6 +149,12 @@ namespace VirtualBAJA
         {
             RxString = serialPort1.ReadExisting();              //le o dado disponível na serial
             this.Invoke(new EventHandler(trataDadoRecebido));   //chama outra thread para escrever o dado no text box
+            String[] valores = RxString.Split(' ');             //pega os dados e fatia ele criando um vetor
+            Velocidade.Text = valores[0];                       // os labels pegam cada um dos valores
+            valorFreq.Text = valores[1];
+            valorTemp.Text = valores[2];
+            
+
         }
 
         private void trataDadoRecebido(object sender, EventArgs e)
