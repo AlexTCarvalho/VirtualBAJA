@@ -2,7 +2,7 @@
 
 Repositório criado em 18/12/2017
 
-Aqui está o código para equipe BAJA UEA no box da competição.
+Este repositório contém o VirtualBAJA, meu último trabalho como integrante da equipe BAJA UEA, esta é a parte do software do box da equipe, e fez parte do meu artigo "Comunicação Remota entre Veículo Mini-Baja e box utilizando XBee e LabView", que pode ser lido integrante neste link: http://lcv.fee.unicamp.br/images/BTSym18/Papers/131.pdf.
 
 Membros da equipe:
 Alex Torres
